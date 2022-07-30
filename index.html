@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localizar lugares</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+        integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+        crossorigin="" />
+    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+
+<body>
+    <div class="container d-flex justify-content-center align-items-center">
+        <div class="search px-4 py-4">
+            <div class="mb-3">
+                <label for="input__cidade" class="form-label">Pesquise o lugar que deseja encontrar</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Digite o nome de uma Cidade, Rua ou Praça"
+                        aria-label="Digite o nome da cidade" id="input-search_city" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button" id="button-search_city">Listrar</button>
+                </div>
+            </div>
+            <div class="list-group">
+                <h2 class="text-titulo">Faça sua busca</h2>
+                <div id="city">
+                    <p>É necessário buscar uma lugar para que possamos listar as localizações encontadas</p>
+                </div>
+            </div>
+        </div>
+        <div id="mapa" class="map px-4 py-4">
+            <div id="map">
+                <img src="assets/IMG/pexels-lara-jameson-8828626.webp" alt="mapa">
+            </div>
+        </div>
+    </div>
+    <div class="loading d-none justify-content-center align-items-center">
+        <div class="spinner-grow" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only"></span>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+        integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+        crossorigin=""></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script src="assets/JS/main.js"></script>
+</body>
+
+</html>
